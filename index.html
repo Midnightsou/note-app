@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <h1>To-Do List</h1>
-        <input type="text" id="new-task" placeholder="Add a new task">
-        <button id="add-task">Add</button>
-        <ul id="task-list"></ul>
-    </div>
+    <main id="app">
+        <header>
+            <h1>To-Do List</h1>
+        </header>
+        <section class="task-list-section">
+            <ul id="task-list" aria-label="Task list"></ul>
+        </section>
+        <section class="task-input-section">
+            <input type="text" id="new-task" placeholder="Add a new task" aria-label="Add a new task">
+            <button id="add-task" aria-label="Add task">Add</button>
+        </section>
+        <div id="message-box" aria-live="polite" style="display:none;"></div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
